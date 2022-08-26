@@ -258,6 +258,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 50vh;
   }
 }
 .container .preview .preview_body .preview_text-side {
@@ -279,6 +280,7 @@ body {
   .container .preview .preview_body .preview_text-side {
     margin: 0px;
     width: 100%;
+    height: 35%;
   }
 }
 @media (max-height: 600px) {
@@ -293,6 +295,11 @@ body {
   font-weight: 700;
   text-align: center;
 }
+@media (max-width: 850px) {
+  .container .preview .preview_body .preview_text-side .preview_title {
+    font-size: 20px;
+  }
+}
 .container .preview .preview_body .preview_text-side .preview_subtitle {
   color: #6F7182;
   font-size: 16px;
@@ -300,7 +307,7 @@ body {
 }
 @media (max-width: 850px) {
   .container .preview .preview_body .preview_text-side .preview_subtitle {
-    font-size: 2vw;
+    font-size: 18px;
   }
 }
 .container .preview .preview_body .preview_text-side .preview_buttons {
@@ -317,6 +324,11 @@ body {
   height: 7vh;
   min-height: 30px;
   width: 80%;
+}
+@media (max-width: 1300px) {
+  .container .preview .preview_body .preview_text-side .preview_buttons {
+    width: 100%;
+  }
 }
 @media (max-width: 850px) {
   .container .preview .preview_body .preview_text-side .preview_buttons {
@@ -343,12 +355,22 @@ body {
   font-weight: 700;
   color: white;
 }
+@media (max-width: 850px) {
+  .container .preview .preview_body .preview_text-side .preview_buttons .preview_button_2 button p {
+    font-size: 20px;
+  }
+}
 .container .preview .preview_body .preview_text-side .preview_buttons .preview_button_1 {
   background: white;
   height: 100%;
-  width: 45%;
-  margin: 0px 15px 0px 15px;
-  max-width: 200px;
+  width: 47%;
+  max-width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .container .preview .preview_body .preview_text-side .preview_buttons .preview_button_1 button {
   background: white;
@@ -358,10 +380,16 @@ body {
           box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
   width: 100%;
   height: 100%;
+  max-width: 200px;
 }
 .container .preview .preview_body .preview_text-side .preview_buttons .preview_button_1 button p {
   font-size: 16px;
   font-weight: 700;
+}
+@media (max-width: 850px) {
+  .container .preview .preview_body .preview_text-side .preview_buttons .preview_button_1 button p {
+    font-size: 20px;
+  }
 }
 .container .preview .preview_body .preview_photo-side {
   background: url(../content/preview/windows.svg) 100% 50%/contain no-repeat;
@@ -380,7 +408,7 @@ body {
 @media (max-width: 850px) {
   .container .preview .preview_body .preview_photo-side {
     width: 100%;
-    height: 100%;
+    height: 60%;
   }
 }
 @media (max-height: 600px) {
@@ -408,8 +436,8 @@ body {
 @media (max-width: 850px) {
   .container .preview .preview_body .preview_photo-side .preview_rectangle {
     width: 70%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
     margin-left: 2vw;
   }
 }
@@ -429,6 +457,12 @@ body {
   height: 170vh;
 }
 @media (max-width: 1250px) {
+  .container .kit {
+    margin-top: 0vh;
+    height: 140vh;
+  }
+}
+@media (max-width: 992px) {
   .container .kit {
     margin-top: 0vh;
     height: 150vh;
@@ -451,7 +485,7 @@ body {
   height: 100%;
 }
 .container .kit .kit_body .kit_title {
-  height: 8%;
+  height: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,18 +495,19 @@ body {
 }
 @media (max-width: 1250px) {
   .container .kit .kit_body .kit_title {
-    height: 5%;
+    height: 10%;
   }
 }
 .container .kit .kit_body .kit_title p {
   font-weight: 700;
-  font-size: 2.5vw;
+  font-size: 40px;
   text-align: center;
-  line-height: 4vw;
+  line-height: 60px;
 }
 @media (max-width: 850px) {
   .container .kit .kit_body .kit_title p {
-    font-size: 4vw;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 .container .kit .kit_body .kit_cards {
@@ -531,7 +566,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 60%;
+    height: 100%;
   }
 }
 @media (max-width: 850px) {
@@ -555,7 +590,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 50%;
 }
 .container .kit .kit_body .kit_cards .kit_card .kit_card-txt p {
   text-align: left;
@@ -566,8 +601,13 @@ body {
 }
 @media (max-width: 1250px) {
   .container .kit .kit_body .kit_cards .kit_card .kit_card-txt p:nth-child(1) {
-    font-size: 3vw;
+    font-size: 50px;
     text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .container .kit .kit_body .kit_cards .kit_card .kit_card-txt p:nth-child(1) {
+    font-size: 30px;
   }
 }
 .container .kit .kit_body .kit_cards .kit_card .kit_card-txt p:nth-child(2) {
@@ -575,8 +615,13 @@ body {
 }
 @media (max-width: 1250px) {
   .container .kit .kit_body .kit_cards .kit_card .kit_card-txt p:nth-child(2) {
-    font-size: 1.5vw;
+    font-size: 20px;
     text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .container .kit .kit_body .kit_cards .kit_card .kit_card-txt p:nth-child(2) {
+    font-size: 15px;
   }
 }
 .container .kit .kit_body .kit_layouts {
@@ -608,10 +653,32 @@ body {
     height: 28%;
   }
 }
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 90%;
+    height: 40%;
+  }
+}
+@media (max-width: 772px) {
+  .container .kit .kit_body .kit_layouts {
+    width: 98%;
+  }
+}
 .container .kit .kit_body .kit_layouts .kit_background_block {
   width: 55%;
   height: 100%;
   background: url(../content/kit/background_1.svg) 0% 0%/auto 100% no-repeat;
+}
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts .kit_background_block {
+    width: 100%;
+    height: 30%;
+    background: url(../content/kit/background_1.svg) 0 0 space;
+  }
 }
 .container .kit .kit_body .kit_layouts .kit_text_block_1 {
   display: -webkit-box;
@@ -626,13 +693,44 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 {
+    width: 100%;
+    height: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 540px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 {
+    height: 60%;
+  }
+}
 .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-txt {
   margin-left: 5%;
+}
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-txt {
+    margin-left: 0%;
+  }
 }
 .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-txt p {
   color: #1476FF;
   text-transform: uppercase;
   font-size: 1.7vw;
+}
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-txt p {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 772px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-txt p {
+    font-size: 30px;
+  }
 }
 .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-title {
   margin-left: 5%;
@@ -644,6 +742,16 @@ body {
   .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-title {
     font-size: 2.5vw;
     line-height: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-title {
+    font-size: 25px;
   }
 }
 .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-subtitle {
@@ -658,16 +766,34 @@ body {
     line-height: 15px;
   }
 }
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-subtitle {
+    font-size: 15px;
+    line-height: 30px;
+    height: 20%;
+  }
+}
+@media (max-width: 540px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_layouts-subtitle {
+    font-size: 10px;
+    line-height: 25px;
+  }
+}
 .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_button_2 {
   background: white;
   height: 17%;
   min-height: 50px;
-  width: 35%;
-  max-width: 200px;
+  width: 40%;
+  max-width: 300px;
 }
 @media (max-width: 1250px) {
   .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_button_2 {
     width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_button_2 {
+    height: 10%;
   }
 }
 .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_button_2 button {
@@ -680,9 +806,14 @@ body {
   height: 100%;
 }
 .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_button_2 button p {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
   color: white;
+}
+@media (max-width: 540px) {
+  .container .kit .kit_body .kit_layouts .kit_text_block_1 .kit_button_2 button p {
+    font-size: 20px;
+  }
 }
 .container .kit .kit_body .kit_figma-file {
   display: -webkit-box;
@@ -707,6 +838,21 @@ body {
           justify-content: flex-end;
   overflow: hidden;
 }
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_figma-file {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    height: 40%;
+  }
+}
+@media (max-width: 772px) {
+  .container .kit .kit_body .kit_figma-file {
+    width: 98%;
+  }
+}
 .container .kit .kit_body .kit_figma-file .kit_text-block_2 {
   margin-left: 5%;
   width: 40%;
@@ -720,6 +866,18 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_figma-file .kit_text-block_2 {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0%;
+    margin-top: 10px;
+  }
 }
 .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-block {
   display: -webkit-box;
@@ -737,14 +895,25 @@ body {
           box-shadow: 0px 2px 10px rgba(25, 93, 194, 0.07);
   border-radius: 30px;
   height: 14%;
-  width: 55%;
+  width: 60%;
+  min-width: 300px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1350px) {
+  .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-block {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-block {
+    width: 60%;
+  }
+}
 .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-block p {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 20px;
   height: 30%;
 }
 .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-block img {
@@ -756,9 +925,22 @@ body {
   font-size: 32px;
   line-height: 50px;
 }
+@media (max-width: 850px) {
+  .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-title {
+    font-size: 24px;
+    line-height: 20px;
+  }
+}
 .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-subtitle {
   color: #6F7182;
   font-size: 15px;
+  width: 80%;
+}
+@media (max-width: 850px) {
+  .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_figma-subtitle {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 .container .kit .kit_body .kit_figma-file .kit_text-block_2 .kit_button_2 {
   background: white;
@@ -795,7 +977,16 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (max-width: 992px) {
+  .container .kit .kit_body .kit_figma-file .kit_figma_background {
+    width: 100%;
+    height: 30%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .container .kit .kit_body .kit_figma-file .kit_figma_background img {
   overflow: hidden;
-  width: 100%;
+  height: 100%;
 }
