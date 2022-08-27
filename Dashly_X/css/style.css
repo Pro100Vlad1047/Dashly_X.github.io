@@ -78,6 +78,19 @@ body {
   font-family: "Inter";
 }
 
+@media screen and (orientation: landscape) and (max-device-width: 900px) {
+  html {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    width: 320px;
+    /*Разрешение экрана iPhone*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
